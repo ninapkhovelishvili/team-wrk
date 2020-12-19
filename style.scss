@@ -44,9 +44,16 @@ a {
             flex-direction: column;
             justify-content: center;
             align-items: center;
+
+            @media screen and (max-width: 1140px){
+                width: 100%;
+                padding-left: 20px;
+                padding-right: 20px;
+            }
     
             .latest-blog-header{
                 width: 100%;
+
     
                 h2{
                     font-size: 22px;
@@ -66,6 +73,12 @@ a {
                 justify-content: space-between;
                 align-items: center;
 
+                @media screen and (max-width: 1140px){
+                    flex-wrap: wrap;
+                    justify-content: center;
+                }
+
+
                 .blog-article{
                     width: 550px;
                     height: 570px;
@@ -75,6 +88,12 @@ a {
                     flex-direction: column;
                     margin-right: 5px;
 
+                    @media screen and (max-width: 1140px){
+                        width: 100%;
+                        height: 100%;
+                        margin-bottom: 25px;
+                    }
+
                     .article-img{
                         height: 259px;
                         width: 555px;
@@ -82,6 +101,10 @@ a {
                         background-repeat: no-repeat;
                         background-position: center center;
                         transition: 0.5s;
+
+                        @media screen and (max-width: 1140px){
+                            width: 100%;
+                        }
 
                         &:hover .hover{
                             display: flex;
@@ -95,6 +118,10 @@ a {
                             justify-content: center;
                             align-items: center;
                             display: none;
+
+                            @media screen and (max-width: 1140px){
+                                width: 100%;
+                            }
             
 
                             .icon{
@@ -103,7 +130,7 @@ a {
                                 border-radius: 100%;
                                 background-color:#0183c1;
                                 color: white;
-                                font-size: 30px;
+                                font-size: 15px;
                                 display: flex;
                                 justify-content: center;
                                 align-items: center;
@@ -201,6 +228,12 @@ a {
             justify-content: center;
             align-items: center;
 
+            @media screen and (max-width: 1140px){
+                width: 100%;
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+
             .instagram-inner-header{
                 width: 100%;
 
@@ -224,6 +257,11 @@ a {
                 display: flex;
                 justify-content: space-between;
 
+                @media screen and (max-width: 1140px){
+                    flex-wrap: wrap;
+                    height: 100%;
+                }
+
                 .instagram-inner-description{
                     width: 912px;
                     font-size: 14px;
@@ -245,6 +283,10 @@ a {
                     justify-content: center;
                     align-items: center;
 
+                    @media screen and (max-width: 1140px){
+                        margin-top: 20px;
+                    }
+
                     span{
                         padding-left: 5px;
                     }
@@ -265,12 +307,23 @@ a {
             align-items: center;
             padding: 30px;
 
+            @media screen and (max-width: 1140px){
+                flex-wrap: wrap;
+                justify-content: center;
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+
             .logo{
                 width: 185px;
                 height: 50px;
                 display: flex;
                 justify-content: center;
                 align-items: center;
+
+                @media screen and (max-width: 1140px){
+                    margin: 25px;
+                }
             }
         }
     }
@@ -295,12 +348,26 @@ a {
             display: flex;
             justify-content: center;
             align-items: center;   
+
+            @media screen and (max-width: 1140px){
+                flex-wrap: wrap;
+                justify-content: center;
+                height: 100%;
+                padding: 20px;
+            }
             
             .newsletter-items{
                 width: 100%;
                 display: flex;
                 justify-content: center;
                 align-items: center;
+
+                @media screen and (max-width: 1140px){
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    padding-left: 20px;
+                    padding-right: 20px;
+                }
 
                 span{
                     font-size: 16px;
@@ -309,6 +376,10 @@ a {
                     text-transform: uppercase;
                     letter-spacing: 1px;
                     margin-right: 8px;  
+
+                    @media screen and (max-width: 576px){
+                        margin-bottom: 10px;
+                     }
                 }
 
                 .mail{
@@ -320,6 +391,10 @@ a {
                     border-radius: 3px;
                     padding-left: 15px;
                     margin-left: 10px;
+
+                    @media screen and (max-width: 1140px){
+                        width: 100%;
+                    }
                 }
 
                 .bttn{
@@ -334,6 +409,9 @@ a {
                     line-height: 17px;
                     cursor: pointer;
 
+                    @media screen and (max-width: 1140px){
+                        margin-top: 10px;
+                    }
                 }
             }
         }
@@ -349,6 +427,13 @@ a {
                 justify-content: space-between;
                 align-items: center;
 
+                @media screen and (max-width: 1140px){
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    padding-left: 20px;
+                    padding-right: 20px;
+                }
+
                 .bottom-block{
                     width: 100%;
                     height: 256px;
@@ -359,8 +444,22 @@ a {
                     padding-bottom: 40px;
                     border-right: 1px solid #444444;
 
+                    @media screen and (max-width: 1140px){
+                        width: 50%;
+                        height: 100%;
+                        justify-content: center;
+                        align-items: center;
+                        border: none;
+                     }
+
+                     @media screen and (max-width: 576px){
+                        width: 100%;
+                     }
+
+
                     &:nth-child(4){
                         border:none;
+
                     }
 
                     h3{
@@ -371,6 +470,10 @@ a {
                         letter-spacing: 1px;
                         line-height: normal;
                         padding-bottom: 20px;
+
+                        @media screen and (max-width: 420px){
+                            padding-bottom: 8px;
+                         }
                     }
 
                     li{
@@ -394,32 +497,38 @@ a {
                         width: 100%;
                         height: 40px;
                         display: flex;
-                        // justify-content: space-between;
                         align-items: center;
                         margin-top: 10px;
 
-                        .contact-us-icon{
-                            width: 35px;
-                            height: 35px;
-                            background-color: $blue;
-                            border-radius: 100%;
+                        a{ 
+                             width: 100%;
                             display: flex;
-                            justify-content: center;
                             align-items: center;
-                            margin-right: 10px;
 
-                            i{
-                                color: white;
-                                font-size: 15px;
+
+                            .contact-us-icon{
+                                width: 35px;
+                                height: 35px;
+                                background-color: $blue;
+                                border-radius: 100%;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                margin-right: 10px;
+
+                                i{
+                                    color: white;
+                                    font-size: 15px;
+                                }
                             }
-                        }
 
-                        p{
-                            color: #aaaaaa;
-                            line-height: 1em;
-                            font-size: 12px;
-                            text-transform: capitalize;
-                            font-weight: normal;
+                            p{
+                                color: #aaaaaa;
+                                line-height: 1em;
+                                font-size: 12px;
+                                text-transform: capitalize;
+                                font-weight: normal;
+                            }
                         }
                     }
                 }
@@ -439,14 +548,32 @@ a {
                 padding-top: 30px;
                 padding-bottom: 30px;
 
+                @media screen and (max-width: 1140px){
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    padding-left: 20px;
+                    padding-right: 20px;
+                }
+
                 .social-networks{
-                    width: 50%;
+                    width: 65%;
                     height: 35px;
+                    display: flex;
+                    justify-content: left;
+                    align-items: center;
                     padding-left: 30px;
-                    padding-right: 30px;
+                    // padding-right: 30px;
+
+                    @media screen and (max-width: 768px){
+                        width: 100%;
+                        justify-content: center;
+                        padding-left: 20px;
+                        padding-right: 20px;
+                    }
 
                     ul{
                         display: flex;
+
 
                         li{
                             width: 35px;
@@ -456,6 +583,7 @@ a {
                             display: flex;
                             justify-content: center;
                             align-items: center;
+
 
                             &:nth-child(1){
                                 background-color: #359BED;
@@ -494,22 +622,39 @@ a {
                 }
 
                 .paying-items{
-                    width: 50%;
-                    padding-left: 30px;
+                    width: 35%;
                     padding-right: 30px;
                     display: flex;
                     justify-content: center;
-                    align-items: left;
+                    align-items:center;
+
+                    @media screen and (max-width: 768px){
+                        width: 100%;
+                        margin-top: 20px;
+                    }
+
+                    
 
                     ul{
                         display: flex;
+                        justify-content: right;
+
+                        @media screen and (max-width: 420px){
+                           flex-wrap: wrap;
+                           justify-content: center;
+                           align-items: center;
+                        }
                         
                         li{
                             width: 50px;
-                            height: 34px;
                             margin-left: 10px;
                             margin-right: 10px;
                             transition: 0.5s;
+
+                            @media screen and (max-width: 1140px){
+                                margin: 10px;
+                            }
+
 
                             &:hover {
                                 opacity: 0.7;
@@ -526,7 +671,6 @@ a {
 
 
 
-
 .copyright{
     width: 100%;
     background-color: #333333;
@@ -539,6 +683,10 @@ a {
         display: flex;
         justify-content: center;
         align-items: center;
+
+        @media screen and (max-width: 1140px){
+            flex-wrap: wrap;
+        }
 
         span{
             font-size: 12px;
